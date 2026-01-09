@@ -6,9 +6,10 @@ import type { SuccessWithProgress } from "@/lib/successes/types";
 
 interface Props {
   success: SuccessWithProgress;
+  isAdmin: boolean;
 }
 
-export function SuccessItem({ success }: Props) {
+export function SuccessItem({ success, isAdmin }: Props) {
   return (
     <motion.div
       layout
@@ -22,6 +23,7 @@ export function SuccessItem({ success }: Props) {
         <SuccessCheckbox
           successId={success.id}
           isCompleted={success.isCompleted}
+          isAdmin={isAdmin}
         />
 
         <div className="flex-1">
@@ -32,7 +34,7 @@ export function SuccessItem({ success }: Props) {
 
           {success.completedAt && (
             <p className="text-sheikah-gold text-xs mt-2">
-              Completed: {new Date(success.completedAt).toLocaleDateString()}
+              Complete: {new Date(success.completedAt).toLocaleDateString("fr-FR")}
             </p>
           )}
         </div>

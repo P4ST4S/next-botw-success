@@ -30,6 +30,7 @@
   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-zelda: var(--font-wild-breath);
 }
 
 @keyframes pulse-glow {
@@ -61,4 +62,10 @@ body {
   background: var(--sheikah-dark);
   color: var(--sheikah-blue);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Utiliser la font Zelda pour les titres */
+h1, h2, h3 {
+  font-family: var(--font-wild-breath), var(--font-geist-sans), sans-serif;
+  letter-spacing: 0.05em;
 }

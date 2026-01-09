@@ -7,13 +7,16 @@ import { toggleSuccessAction } from "@/app/actions/toggle-success";
 interface Props {
   successId: string;
   isCompleted: boolean;
+  isAdmin: boolean;
 }
 
-export function SuccessCheckbox({ successId, isCompleted }: Props) {
+export function SuccessCheckbox({ successId, isCompleted, isAdmin }: Props) {
   const [isChecked, setIsChecked] = useState(isCompleted);
   const [isAnimating, setIsAnimating] = useState(false);
 
   async function handleToggle() {
+    if (!isAdmin) return;
+
     setIsAnimating(true);
     const newState = !isChecked;
     setIsChecked(newState);
@@ -31,8 +34,11 @@ export function SuccessCheckbox({ successId, isCompleted }: Props) {
   return (
     <button
       onClick={handleToggle}
-      disabled={isAnimating}
-      className="relative w-8 h-8 flex-shrink-0 border-2 border-sheikah-blue rounded flex items-center justify-center hover:shadow-glow transition-all disabled:opacity-50"
+      disabled={isAnimating || !isAdmin}
+      className={`relative w-8 h-8 flex-shrink-0 border-2 border-sheikah-blue rounded flex items-center justify-center transition-all ${
+        isAdmin ? "hover:shadow-glow cursor-pointer" : "cursor-not-allowed opacity-60"
+      } ${isAnimating ? "opacity-50" : ""}`}
+      title={!isAdmin ? "Admin seulement" : ""}
     >
       {isChecked && (
         <motion.div
