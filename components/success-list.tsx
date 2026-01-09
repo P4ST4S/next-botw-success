@@ -68,12 +68,22 @@ export function SuccessList({ successes, categories, isAdmin }: Props) {
 
       <motion.div
         layout
+        initial="initial"
+        animate="animate"
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"
       >
         <AnimatePresence mode="popLayout">
           {filteredSuccesses.length > 0 ? (
-            filteredSuccesses.map((success) => (
-              <SuccessItem key={success.id} success={success} isAdmin={isAdmin} />
+            filteredSuccesses.map((success, index) => (
+              <motion.div
+                key={success.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ delay: index * 0.05, duration: 0.3 }}
+              >
+                <SuccessItem success={success} isAdmin={isAdmin} />
+              </motion.div>
             ))
           ) : (
             <motion.div

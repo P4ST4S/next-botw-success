@@ -23,9 +23,12 @@
   /* Shadows */
   --shadow-glow: 0 0 20px rgba(0, 253, 255, 0.5);
   --shadow-glow-lg: 0 0 40px rgba(0, 253, 255, 0.5);
+  --shadow-text-glow: 0 0 10px rgba(0, 253, 255, 0.8);
 
   /* Animations */
   --animation-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animation-data-stream: data-stream 3s linear infinite;
+  --animation-hologram: hologram 4s ease-in-out infinite;
 
   /* Fonts */
   --font-sans: var(--font-geist-sans);
@@ -58,6 +61,44 @@
   }
 }
 
+@keyframes data-stream {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes hologram {
+  0%, 100% {
+    opacity: 0.95;
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 0.85;
+    filter: blur(0.5px);
+  }
+}
+
+@keyframes circuit-pulse {
+  0%, 100% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 20;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 body {
   background: var(--sheikah-dark);
   color: var(--sheikah-blue);
@@ -68,4 +109,24 @@ body {
 h1, h2, h3 {
   font-family: var(--font-wild-breath), var(--font-geist-sans), sans-serif;
   letter-spacing: 0.05em;
+}
+
+/* Add hologram effect class */
+.hologram-effect {
+  animation: hologram 4s ease-in-out infinite;
+}
+
+/* Text glow effect */
+.text-shadow-glow {
+  text-shadow: 0 0 10px rgba(0, 253, 255, 0.8), 0 0 20px rgba(0, 253, 255, 0.4);
+}
+
+/* Circuit lines pulse */
+.circuit-pulse {
+  animation: circuit-pulse 2s linear infinite;
+}
+
+/* Floating animation for particles */
+.float {
+  animation: float 3s ease-in-out infinite;
 }
