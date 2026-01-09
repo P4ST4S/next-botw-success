@@ -2,21 +2,26 @@
 
 import { auth } from "@/auth";
 import { toggleSuccess } from "@/lib/db/queries";
-import { revalidateTag } from "next/cache";
-import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
+
+// Fixed admin user ID (same as in success-tracker)
+const ADMIN_USER_ID = "admin";
 
 export async function toggleSuccessAction(successId: string) {
   const session = await auth();
 
-  if (!session?.user?.id) {
-    redirect("/login");
+  // Check if user is admin
+  const isAdmin = session?.user?.email?.toLowerCase() === process.env.ADMIN_EMAIL?.toLowerCase();
+
+  if (!isAdmin) {
+    return { success: false, error: "Unauthorized: Admin only" };
   }
 
   try {
-    const result = await toggleSuccess(session.user.id, successId);
+    const result = await toggleSuccess(ADMIN_USER_ID, successId);
 
-    // Invalidate user progress cache using revalidateTag
-    revalidateTag(`user-progress-${session.user.id}`);
+    // Revalidate the dashboard to update the UI
+    revalidatePath("/dashboard");
 
     return { success: true, action: result.action };
   } catch (error) {
