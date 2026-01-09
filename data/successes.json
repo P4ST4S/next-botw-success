@@ -1,0 +1,402 @@
+{
+  "categories": [
+    {
+      "id": "shrines",
+      "name": "Shrines",
+      "icon": "temple",
+      "color": "#00FDFF"
+    },
+    {
+      "id": "koroks",
+      "name": "Korok Seeds",
+      "icon": "leaf",
+      "color": "#8BC34A"
+    },
+    {
+      "id": "quests",
+      "name": "Quests",
+      "icon": "scroll",
+      "color": "#FFC107"
+    },
+    {
+      "id": "exploration",
+      "name": "Exploration",
+      "icon": "compass",
+      "color": "#FF5722"
+    },
+    {
+      "id": "combat",
+      "name": "Combat",
+      "icon": "sword",
+      "color": "#F44336"
+    },
+    {
+      "id": "collection",
+      "name": "Collection",
+      "icon": "treasure",
+      "color": "#9C27B0"
+    }
+  ],
+  "successes": [
+    {
+      "id": "shrine-001",
+      "title": "Oman Au Shrine",
+      "description": "Complete the Magnesis Trial at the Oman Au Shrine on the Great Plateau",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-002",
+      "title": "Ja Baij Shrine",
+      "description": "Complete the Bomb Trial at the Ja Baij Shrine",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-003",
+      "title": "Keh Namut Shrine",
+      "description": "Complete the Cryonis Trial at the Keh Namut Shrine",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-004",
+      "title": "Owa Daim Shrine",
+      "description": "Complete the Stasis Trial at the Owa Daim Shrine",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-005",
+      "title": "Dah Kaso Shrine",
+      "description": "Complete the power of fire challenge in Goron territory",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-006",
+      "title": "Sho Dantu Shrine",
+      "description": "Solve the two bombs puzzle near Kakariko Village",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-007",
+      "title": "Lakna Rokee Shrine",
+      "description": "Complete the shrine with the Korok Forest puzzle",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-008",
+      "title": "Ta'loh Naeg Shrine",
+      "description": "Master the teaching of combat with a guardian sword",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-009",
+      "title": "Dow Na'eh Shrine",
+      "description": "Complete the three boxes puzzle",
+      "category": "shrines"
+    },
+    {
+      "id": "shrine-010",
+      "title": "Myahm Agana Shrine",
+      "description": "Complete the motion control maze challenge",
+      "category": "shrines"
+    },
+    {
+      "id": "korok-001",
+      "title": "Great Plateau Korok",
+      "description": "Find the Korok hiding in the tree near the Temple of Time",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-002",
+      "title": "Kakariko Village Korok",
+      "description": "Discover the Korok behind Impa's house",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-003",
+      "title": "Hyrule Castle Korok",
+      "description": "Find the brave Korok hiding in the castle ruins",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-004",
+      "title": "Mount Hylia Korok",
+      "description": "Reach the peak and find the Korok under a rock",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-005",
+      "title": "Zora's Domain Korok",
+      "description": "Complete the ring challenge near the waterfall",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-006",
+      "title": "Gerudo Desert Korok",
+      "description": "Find the Korok in the sandstorm",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-007",
+      "title": "Death Mountain Korok",
+      "description": "Brave the heat to find this Korok",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-008",
+      "title": "Rito Village Korok",
+      "description": "Glide to find this airborne Korok",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-009",
+      "title": "Faron Woods Korok",
+      "description": "Shoot the balloon in the jungle",
+      "category": "koroks"
+    },
+    {
+      "id": "korok-010",
+      "title": "Hebra Mountain Korok",
+      "description": "Survive the cold to collect this seed",
+      "category": "koroks"
+    },
+    {
+      "id": "quest-001",
+      "title": "Seek Out Impa",
+      "description": "Travel to Kakariko Village and speak with Impa",
+      "category": "quests"
+    },
+    {
+      "id": "quest-002",
+      "title": "Locked Mementos",
+      "description": "Recover the stolen Sheikah heirloom in Kakariko Village",
+      "category": "quests"
+    },
+    {
+      "id": "quest-003",
+      "title": "Divine Beast Vah Ruta",
+      "description": "Free the Zora Divine Beast from Ganon's control",
+      "category": "quests"
+    },
+    {
+      "id": "quest-004",
+      "title": "Divine Beast Vah Rudania",
+      "description": "Free the Goron Divine Beast from Ganon's control",
+      "category": "quests"
+    },
+    {
+      "id": "quest-005",
+      "title": "Divine Beast Vah Medoh",
+      "description": "Free the Rito Divine Beast from Ganon's control",
+      "category": "quests"
+    },
+    {
+      "id": "quest-006",
+      "title": "Divine Beast Vah Naboris",
+      "description": "Free the Gerudo Divine Beast from Ganon's control",
+      "category": "quests"
+    },
+    {
+      "id": "quest-007",
+      "title": "The Hero's Sword",
+      "description": "Find and claim the legendary Master Sword",
+      "category": "quests"
+    },
+    {
+      "id": "quest-008",
+      "title": "Captured Memories",
+      "description": "Recover all of Link's lost memories",
+      "category": "quests"
+    },
+    {
+      "id": "quest-009",
+      "title": "The Thunder Helm",
+      "description": "Complete all side quests to borrow the Gerudo Thunder Helm",
+      "category": "quests"
+    },
+    {
+      "id": "quest-010",
+      "title": "From the Ground Up",
+      "description": "Help Hudson build Tarrey Town from scratch",
+      "category": "quests"
+    },
+    {
+      "id": "explore-001",
+      "title": "Climb Mount Hylia",
+      "description": "Reach the peak of Mount Hylia and activate the tower",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-002",
+      "title": "Hyrule Castle Infiltration",
+      "description": "Enter and explore the ruins of Hyrule Castle",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-003",
+      "title": "Gerudo Town Visitor",
+      "description": "Enter the all-female Gerudo Town",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-004",
+      "title": "Zora's Domain Explorer",
+      "description": "Discover the beautiful Zora's Domain",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-005",
+      "title": "Goron City Survivor",
+      "description": "Reach Goron City despite the intense heat",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-006",
+      "title": "Rito Village Arrival",
+      "description": "Climb to Rito Village in the snowy mountains",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-007",
+      "title": "Korok Forest Guardian",
+      "description": "Navigate the Lost Woods to reach Korok Forest",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-008",
+      "title": "Lurelin Village Discovery",
+      "description": "Find the hidden seaside village of Lurelin",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-009",
+      "title": "Eventide Island Challenge",
+      "description": "Complete the survival challenge on Eventide Island",
+      "category": "exploration"
+    },
+    {
+      "id": "explore-010",
+      "title": "All Towers Activated",
+      "description": "Climb and activate all 15 Sheikah Towers",
+      "category": "exploration"
+    },
+    {
+      "id": "combat-001",
+      "title": "Guardian Hunter",
+      "description": "Defeat your first Guardian Scout",
+      "category": "combat"
+    },
+    {
+      "id": "combat-002",
+      "title": "Hinox Slayer",
+      "description": "Defeat a Hinox and claim its treasure",
+      "category": "combat"
+    },
+    {
+      "id": "combat-003",
+      "title": "Lynel Vanquisher",
+      "description": "Defeat your first Lynel in combat",
+      "category": "combat"
+    },
+    {
+      "id": "combat-004",
+      "title": "Talus Crusher",
+      "description": "Destroy a Stone Talus",
+      "category": "combat"
+    },
+    {
+      "id": "combat-005",
+      "title": "Molduga Master",
+      "description": "Hunt and defeat a Molduga in the desert",
+      "category": "combat"
+    },
+    {
+      "id": "combat-006",
+      "title": "Silver Enemy Defeated",
+      "description": "Defeat your first silver-tier enemy",
+      "category": "combat"
+    },
+    {
+      "id": "combat-007",
+      "title": "Guardian Stalker Destroyer",
+      "description": "Defeat a mobile Guardian Stalker",
+      "category": "combat"
+    },
+    {
+      "id": "combat-008",
+      "title": "Perfect Parry Master",
+      "description": "Successfully parry a Guardian laser",
+      "category": "combat"
+    },
+    {
+      "id": "combat-009",
+      "title": "Yiga Clan Hideout",
+      "description": "Infiltrate and clear the Yiga Clan Hideout",
+      "category": "combat"
+    },
+    {
+      "id": "combat-010",
+      "title": "Test of Strength Champion",
+      "description": "Complete a Major Test of Strength shrine",
+      "category": "combat"
+    },
+    {
+      "id": "collect-001",
+      "title": "Full Hylian Armor Set",
+      "description": "Collect all three pieces of the Hylian Armor set",
+      "category": "collection"
+    },
+    {
+      "id": "collect-002",
+      "title": "Master Sword Obtained",
+      "description": "Pull the Master Sword from its pedestal",
+      "category": "collection"
+    },
+    {
+      "id": "collect-003",
+      "title": "Hylian Shield",
+      "description": "Obtain the legendary Hylian Shield",
+      "category": "collection"
+    },
+    {
+      "id": "collect-004",
+      "title": "Champion Tunic",
+      "description": "Recover the Champion's Tunic",
+      "category": "collection"
+    },
+    {
+      "id": "collect-005",
+      "title": "Full Soldier Armor",
+      "description": "Complete the Soldier's Armor set",
+      "category": "collection"
+    },
+    {
+      "id": "collect-006",
+      "title": "Ancient Armor Set",
+      "description": "Purchase the complete Ancient Armor set",
+      "category": "collection"
+    },
+    {
+      "id": "collect-007",
+      "title": "Barbarian Armor",
+      "description": "Find all three pieces of the Barbarian Armor in labyrinths",
+      "category": "collection"
+    },
+    {
+      "id": "collect-008",
+      "title": "Climbing Gear",
+      "description": "Complete the Climbing Gear set",
+      "category": "collection"
+    },
+    {
+      "id": "collect-009",
+      "title": "Royal Guard Weapons",
+      "description": "Collect a Royal Guard sword, spear, and bow",
+      "category": "collection"
+    },
+    {
+      "id": "collect-010",
+      "title": "All Champion Abilities",
+      "description": "Unlock all four Champion abilities from the Divine Beasts",
+      "category": "collection"
+    }
+  ]
+}
