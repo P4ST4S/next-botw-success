@@ -1,402 +1,624 @@
 {
   "categories": [
     {
-      "id": "shrines",
-      "name": "Shrines",
-      "icon": "temple",
-      "color": "#00FDFF"
-    },
-    {
-      "id": "koroks",
-      "name": "Korok Seeds",
-      "icon": "leaf",
-      "color": "#8BC34A"
-    },
-    {
-      "id": "quests",
-      "name": "Quests",
+      "id": "story",
+      "name": "Histoire",
       "icon": "scroll",
       "color": "#FFC107"
     },
     {
-      "id": "exploration",
-      "name": "Exploration",
-      "icon": "compass",
-      "color": "#FF5722"
+      "id": "misc",
+      "name": "Divers",
+      "icon": "star",
+      "color": "#9C27B0"
     },
     {
-      "id": "combat",
-      "name": "Combat",
+      "id": "completion",
+      "name": "Complétion",
+      "icon": "treasure",
+      "color": "#00FDFF"
+    },
+    {
+      "id": "challenge",
+      "name": "Challenge",
       "icon": "sword",
       "color": "#F44336"
-    },
-    {
-      "id": "collection",
-      "name": "Collection",
-      "icon": "treasure",
-      "color": "#9C27B0"
     }
   ],
   "successes": [
     {
-      "id": "shrine-001",
-      "title": "Oman Au Shrine",
-      "description": "Complete the Magnesis Trial at the Oman Au Shrine on the Great Plateau",
-      "category": "shrines"
+      "id": "story-001",
+      "title": "Le Réveil du Héros",
+      "description": "Quitter le Sanctuaire de la Renaissance",
+      "category": "story"
     },
     {
-      "id": "shrine-002",
-      "title": "Ja Baij Shrine",
-      "description": "Complete the Bomb Trial at the Ja Baij Shrine",
-      "category": "shrines"
+      "id": "story-002",
+      "title": "Magneto",
+      "description": "Obtenir Polaris",
+      "category": "story"
     },
     {
-      "id": "shrine-003",
-      "title": "Keh Namut Shrine",
-      "description": "Complete the Cryonis Trial at the Keh Namut Shrine",
-      "category": "shrines"
+      "id": "story-003",
+      "title": "Attention grenade",
+      "description": "Obtenir les bombes",
+      "category": "story"
     },
     {
-      "id": "shrine-004",
-      "title": "Owa Daim Shrine",
-      "description": "Complete the Stasis Trial at the Owa Daim Shrine",
-      "category": "shrines"
+      "id": "story-004",
+      "title": "Ça caille",
+      "description": "Obtenir Cryonis",
+      "category": "story"
     },
     {
-      "id": "shrine-005",
-      "title": "Dah Kaso Shrine",
-      "description": "Complete the power of fire challenge in Goron territory",
-      "category": "shrines"
+      "id": "story-005",
+      "title": "Pas bouger",
+      "description": "Obtenir Cinetis",
+      "category": "story"
     },
     {
-      "id": "shrine-006",
-      "title": "Sho Dantu Shrine",
-      "description": "Solve the two bombs puzzle near Kakariko Village",
-      "category": "shrines"
+      "id": "story-006",
+      "title": "Premier Envol",
+      "description": "Obtenir la Paravoile",
+      "category": "story"
     },
     {
-      "id": "shrine-007",
-      "title": "Lakna Rokee Shrine",
-      "description": "Complete the shrine with the Korok Forest puzzle",
-      "category": "shrines"
+      "id": "story-007",
+      "title": "Enfin libre",
+      "description": "Sortir du plateau du prélude",
+      "category": "story"
     },
     {
-      "id": "shrine-008",
-      "title": "Ta'loh Naeg Shrine",
-      "description": "Master the teaching of combat with a guardian sword",
-      "category": "shrines"
+      "id": "story-008",
+      "title": "Hommage aux anciens",
+      "description": "Parler à la doyenne de Cocorico",
+      "category": "story"
     },
     {
-      "id": "shrine-009",
-      "title": "Dow Na'eh Shrine",
-      "description": "Complete the three boxes puzzle",
-      "category": "shrines"
+      "id": "story-009",
+      "title": "Alliance Zora",
+      "description": "Libérer Mipha et Vah'Ruta",
+      "category": "story"
     },
     {
-      "id": "shrine-010",
-      "title": "Myahm Agana Shrine",
-      "description": "Complete the motion control maze challenge",
-      "category": "shrines"
+      "id": "story-010",
+      "title": "Retour du Peuple Piaf",
+      "description": "Libérer Revali et Vah'Medoh",
+      "category": "story"
     },
     {
-      "id": "korok-001",
-      "title": "Great Plateau Korok",
-      "description": "Find the Korok hiding in the tree near the Temple of Time",
-      "category": "koroks"
+      "id": "story-011",
+      "title": "Chaleur Ancestrale",
+      "description": "Libérer Daruk et Vah'Rudania",
+      "category": "story"
     },
     {
-      "id": "korok-002",
-      "title": "Kakariko Village Korok",
-      "description": "Discover the Korok behind Impa's house",
-      "category": "koroks"
+      "id": "story-012",
+      "title": "Sables en Colère",
+      "description": "Libérer Urbosa et Vah'Naboris",
+      "category": "story"
     },
     {
-      "id": "korok-003",
-      "title": "Hyrule Castle Korok",
-      "description": "Find the brave Korok hiding in the castle ruins",
-      "category": "koroks"
+      "id": "story-013",
+      "title": "Libération Totale",
+      "description": "Libérer les quatre créatures divines",
+      "category": "story"
     },
     {
-      "id": "korok-004",
-      "title": "Mount Hylia Korok",
-      "description": "Reach the peak and find the Korok under a rock",
-      "category": "koroks"
+      "id": "story-014",
+      "title": "Mémoire Retrouvée",
+      "description": "Découvrir une première mémoire",
+      "category": "story"
     },
     {
-      "id": "korok-005",
-      "title": "Zora's Domain Korok",
-      "description": "Complete the ring challenge near the waterfall",
-      "category": "koroks"
+      "id": "story-015",
+      "title": "Échos du Passé",
+      "description": "Retrouver toutes les mémoires principales",
+      "category": "story"
     },
     {
-      "id": "korok-006",
-      "title": "Gerudo Desert Korok",
-      "description": "Find the Korok in the sandstorm",
-      "category": "koroks"
+      "id": "story-016",
+      "title": "La Voix de Zelda",
+      "description": "Compléter la quête de la Tablette Sheikah",
+      "category": "story"
     },
     {
-      "id": "korok-007",
-      "title": "Death Mountain Korok",
-      "description": "Brave the heat to find this Korok",
-      "category": "koroks"
+      "id": "story-017",
+      "title": "Chute du Fléau",
+      "description": "Vaincre Ganon",
+      "category": "story"
     },
     {
-      "id": "korok-008",
-      "title": "Rito Village Korok",
-      "description": "Glide to find this airborne Korok",
-      "category": "koroks"
+      "id": "story-018",
+      "title": "Le Gardien de la Forêt",
+      "description": "Rencontrer l'Arbre Mojo",
+      "category": "story"
     },
     {
-      "id": "korok-009",
-      "title": "Faron Woods Korok",
-      "description": "Shoot the balloon in the jungle",
-      "category": "koroks"
+      "id": "story-019",
+      "title": "Épée Récalcitrante",
+      "description": "Tirer la Master Sword",
+      "category": "story"
     },
     {
-      "id": "korok-010",
-      "title": "Hebra Mountain Korok",
-      "description": "Survive the cold to collect this seed",
-      "category": "koroks"
+      "id": "story-020",
+      "title": "Épée Réveillée",
+      "description": "Compléter l'Épreuve de l'Épée (DLC)",
+      "category": "story"
     },
     {
-      "id": "quest-001",
-      "title": "Seek Out Impa",
-      "description": "Travel to Kakariko Village and speak with Impa",
-      "category": "quests"
+      "id": "story-021",
+      "title": "La Légende Continue",
+      "description": "Obtenir la tenue du Prodige",
+      "category": "story"
     },
     {
-      "id": "quest-002",
-      "title": "Locked Mementos",
-      "description": "Recover the stolen Sheikah heirloom in Kakariko Village",
-      "category": "quests"
+      "id": "story-022",
+      "title": "Voie des Prodiges",
+      "description": "Suivre entièrement la Voie des Héros (DLC 2)",
+      "category": "story"
     },
     {
-      "id": "quest-003",
-      "title": "Divine Beast Vah Ruta",
-      "description": "Free the Zora Divine Beast from Ganon's control",
-      "category": "quests"
+      "id": "story-023",
+      "title": "La Reine Gerudo",
+      "description": "Gagner la confiance de Riju",
+      "category": "story"
     },
     {
-      "id": "quest-004",
-      "title": "Divine Beast Vah Rudania",
-      "description": "Free the Goron Divine Beast from Ganon's control",
-      "category": "quests"
+      "id": "story-024",
+      "title": "Le Bouclier des Sables",
+      "description": "Aider les Gerudos à repousser les Yigas",
+      "category": "story"
     },
     {
-      "id": "quest-005",
-      "title": "Divine Beast Vah Medoh",
-      "description": "Free the Rito Divine Beast from Ganon's control",
-      "category": "quests"
+      "id": "story-025",
+      "title": "La Danse de Kass",
+      "description": "Terminer toutes les quêtes de Kass",
+      "category": "story"
     },
     {
-      "id": "quest-006",
-      "title": "Divine Beast Vah Naboris",
-      "description": "Free the Gerudo Divine Beast from Ganon's control",
-      "category": "quests"
+      "id": "misc-001",
+      "title": "Être mythique",
+      "description": "Faire la rencontre de Noïa",
+      "category": "misc"
     },
     {
-      "id": "quest-007",
-      "title": "The Hero's Sword",
-      "description": "Find and claim the legendary Master Sword",
-      "category": "quests"
+      "id": "misc-002",
+      "title": "Au voleur !",
+      "description": "Se faire voler par la statue maléfique",
+      "category": "misc"
     },
     {
-      "id": "quest-008",
-      "title": "Captured Memories",
-      "description": "Recover all of Link's lost memories",
-      "category": "quests"
+      "id": "misc-003",
+      "title": "Classico",
+      "description": "Jouer au foot avec un Bokoblin",
+      "category": "misc"
     },
     {
-      "id": "quest-009",
-      "title": "The Thunder Helm",
-      "description": "Complete all side quests to borrow the Gerudo Thunder Helm",
-      "category": "quests"
+      "id": "misc-004",
+      "title": "Comme neuf",
+      "description": "Nettoyer une arme via un Octorock",
+      "category": "misc"
     },
     {
-      "id": "quest-010",
-      "title": "From the Ground Up",
-      "description": "Help Hudson build Tarrey Town from scratch",
-      "category": "quests"
+      "id": "misc-005",
+      "title": "Mal élevé",
+      "description": "Monter sur la table de Purah",
+      "category": "misc"
     },
     {
-      "id": "explore-001",
-      "title": "Climb Mount Hylia",
-      "description": "Reach the peak of Mount Hylia and activate the tower",
-      "category": "exploration"
+      "id": "misc-006",
+      "title": "Espion",
+      "description": "Infiltrer le club secret du village Gerudo",
+      "category": "misc"
     },
     {
-      "id": "explore-002",
-      "title": "Hyrule Castle Infiltration",
-      "description": "Enter and explore the ruins of Hyrule Castle",
-      "category": "exploration"
+      "id": "misc-007",
+      "title": "Créateur",
+      "description": "Trouver le sosie de Satoru Iwata",
+      "category": "misc"
     },
     {
-      "id": "explore-003",
-      "title": "Gerudo Town Visitor",
-      "description": "Enter the all-female Gerudo Town",
-      "category": "exploration"
+      "id": "misc-008",
+      "title": "Surboosté",
+      "description": "Trouver une arme améliorée",
+      "category": "misc"
     },
     {
-      "id": "explore-004",
-      "title": "Zora's Domain Explorer",
-      "description": "Discover the beautiful Zora's Domain",
-      "category": "exploration"
+      "id": "misc-009",
+      "title": "Nwaaaaar",
+      "description": "Avoir la tenue de Link Noir",
+      "category": "misc"
     },
     {
-      "id": "explore-005",
-      "title": "Goron City Survivor",
-      "description": "Reach Goron City despite the intense heat",
-      "category": "exploration"
+      "id": "misc-010",
+      "title": "Quelle grâce",
+      "description": "Cuisiner un aliment super fort pendant une lune de sang",
+      "category": "misc"
     },
     {
-      "id": "explore-006",
-      "title": "Rito Village Arrival",
-      "description": "Climb to Rito Village in the snowy mountains",
-      "category": "exploration"
+      "id": "misc-011",
+      "title": "Grosse bouboule",
+      "description": "Créer une énorme boule de neige",
+      "category": "misc"
     },
     {
-      "id": "explore-007",
-      "title": "Korok Forest Guardian",
-      "description": "Navigate the Lost Woods to reach Korok Forest",
-      "category": "exploration"
+      "id": "misc-012",
+      "title": "Vision d'horreur",
+      "description": "Observer votre première lune de sang",
+      "category": "misc"
     },
     {
-      "id": "explore-008",
-      "title": "Lurelin Village Discovery",
-      "description": "Find the hidden seaside village of Lurelin",
-      "category": "exploration"
+      "id": "misc-013",
+      "title": "Totem d'immortalité",
+      "description": "Tuer un ennemi deux fois d'affilés avec une lune de sang",
+      "category": "misc"
     },
     {
-      "id": "explore-009",
-      "title": "Eventide Island Challenge",
-      "description": "Complete the survival challenge on Eventide Island",
-      "category": "exploration"
+      "id": "misc-014",
+      "title": "Wind Waker",
+      "description": "Conduire un bateau avec une feuille korogu",
+      "category": "misc"
     },
     {
-      "id": "explore-010",
-      "title": "All Towers Activated",
-      "description": "Climb and activate all 15 Sheikah Towers",
-      "category": "exploration"
+      "id": "misc-015",
+      "title": "Doberman",
+      "description": "Manger un plat raté",
+      "category": "misc"
     },
     {
-      "id": "combat-001",
-      "title": "Guardian Hunter",
-      "description": "Defeat your first Guardian Scout",
-      "category": "combat"
+      "id": "misc-016",
+      "title": "Deuxième chance",
+      "description": "Empêcher la mort",
+      "category": "misc"
     },
     {
-      "id": "combat-002",
-      "title": "Hinox Slayer",
-      "description": "Defeat a Hinox and claim its treasure",
-      "category": "combat"
+      "id": "misc-017",
+      "title": "Bon toutou",
+      "description": "Trouver un trésor avec un chien",
+      "category": "misc"
     },
     {
-      "id": "combat-003",
-      "title": "Lynel Vanquisher",
-      "description": "Defeat your first Lynel in combat",
-      "category": "combat"
+      "id": "misc-018",
+      "title": "Accident",
+      "description": "Rouler sur un Bokoblin en moto",
+      "category": "misc"
     },
     {
-      "id": "combat-004",
-      "title": "Talus Crusher",
-      "description": "Destroy a Stone Talus",
-      "category": "combat"
+      "id": "misc-019",
+      "title": "Retour à l'envoyeur",
+      "description": "Se prendre son propre boomerang",
+      "category": "misc"
     },
     {
-      "id": "combat-005",
-      "title": "Molduga Master",
-      "description": "Hunt and defeat a Molduga in the desert",
-      "category": "combat"
+      "id": "misc-020",
+      "title": "Cuisson instantanée",
+      "description": "Cuire de la viande d'une manière peu conventionnelle",
+      "category": "misc"
     },
     {
-      "id": "combat-006",
-      "title": "Silver Enemy Defeated",
-      "description": "Defeat your first silver-tier enemy",
-      "category": "combat"
+      "id": "misc-021",
+      "title": "Congélateur naturel",
+      "description": "Congeler de la viande d'une manière peu conventionnelle",
+      "category": "misc"
     },
     {
-      "id": "combat-007",
-      "title": "Guardian Stalker Destroyer",
-      "description": "Defeat a mobile Guardian Stalker",
-      "category": "combat"
+      "id": "misc-022",
+      "title": "Golf it",
+      "description": "Jouer au golf",
+      "category": "misc"
     },
     {
-      "id": "combat-008",
-      "title": "Perfect Parry Master",
-      "description": "Successfully parry a Guardian laser",
-      "category": "combat"
+      "id": "misc-023",
+      "title": "Hommage au Héros du Vent",
+      "description": "Porter la tenue verte classique",
+      "category": "misc"
     },
     {
-      "id": "combat-009",
-      "title": "Yiga Clan Hideout",
-      "description": "Infiltrate and clear the Yiga Clan Hideout",
-      "category": "combat"
+      "id": "misc-024",
+      "title": "Sauve qui peut",
+      "description": "Se faire attaquer par une armée de cocottes",
+      "category": "misc"
     },
     {
-      "id": "combat-010",
-      "title": "Test of Strength Champion",
-      "description": "Complete a Major Test of Strength shrine",
-      "category": "combat"
+      "id": "misc-025",
+      "title": "Mauvais Pêcheur",
+      "description": "Utiliser une méthode de pêche « non conventionnelle »",
+      "category": "misc"
     },
     {
-      "id": "collect-001",
-      "title": "Full Hylian Armor Set",
-      "description": "Collect all three pieces of the Hylian Armor set",
-      "category": "collection"
+      "id": "misc-026",
+      "title": "Réveil du Démon",
+      "description": "Se rendre à l'antre des monstres",
+      "category": "misc"
     },
     {
-      "id": "collect-002",
-      "title": "Master Sword Obtained",
-      "description": "Pull the Master Sword from its pedestal",
-      "category": "collection"
+      "id": "misc-027",
+      "title": "Le Musicien Itinérant",
+      "description": "Écouter un morceau de Kass",
+      "category": "misc"
     },
     {
-      "id": "collect-003",
-      "title": "Hylian Shield",
-      "description": "Obtain the legendary Hylian Shield",
-      "category": "collection"
+      "id": "misc-028",
+      "title": "Fouineur Yiga",
+      "description": "Trouver un Yiga infiltré en civil",
+      "category": "misc"
     },
     {
-      "id": "collect-004",
-      "title": "Champion Tunic",
-      "description": "Recover the Champion's Tunic",
-      "category": "collection"
+      "id": "misc-029",
+      "title": "Pilote Extrême",
+      "description": "Faire un vol en paravoile de plus de 1 minute sans toucher le sol",
+      "category": "misc"
     },
     {
-      "id": "collect-005",
-      "title": "Full Soldier Armor",
-      "description": "Complete the Soldier's Armor set",
-      "category": "collection"
+      "id": "misc-030",
+      "title": "Cupidon",
+      "description": "Créer une rencontre amoureuse",
+      "category": "misc"
     },
     {
-      "id": "collect-006",
-      "title": "Ancient Armor Set",
-      "description": "Purchase the complete Ancient Armor set",
-      "category": "collection"
+      "id": "misc-031",
+      "title": "Retour de Flamme",
+      "description": "Faire exploser 5 ennemis en même temps",
+      "category": "misc"
     },
     {
-      "id": "collect-007",
-      "title": "Barbarian Armor",
-      "description": "Find all three pieces of the Barbarian Armor in labyrinths",
-      "category": "collection"
+      "id": "misc-032",
+      "title": "Cavalier du Désert",
+      "description": "Monter sur un morse de sable",
+      "category": "misc"
     },
     {
-      "id": "collect-008",
-      "title": "Climbing Gear",
-      "description": "Complete the Climbing Gear set",
-      "category": "collection"
+      "id": "misc-033",
+      "title": "Bouclier-Surf Pro",
+      "description": "Descendre une montagne en bouclier",
+      "category": "misc"
     },
     {
-      "id": "collect-009",
-      "title": "Royal Guard Weapons",
-      "description": "Collect a Royal Guard sword, spear, and bow",
-      "category": "collection"
+      "id": "misc-034",
+      "title": "Le Feu et la Glace",
+      "description": "Battre une créature en combinant gel + feu",
+      "category": "misc"
     },
     {
-      "id": "collect-010",
-      "title": "All Champion Abilities",
-      "description": "Unlock all four Champion abilities from the Divine Beasts",
-      "category": "collection"
+      "id": "misc-035",
+      "title": "Gojo Satori",
+      "description": "Monter le Seigneur de la montagne (Alpha)",
+      "category": "misc"
+    },
+    {
+      "id": "misc-036",
+      "title": "Maître du Vent",
+      "description": "Utiliser un courant ascendant créé soi-même",
+      "category": "misc"
+    },
+    {
+      "id": "misc-037",
+      "title": "Le Trésor du Géant",
+      "description": "Trouver un coffre porté par un Hinox",
+      "category": "misc"
+    },
+    {
+      "id": "misc-038",
+      "title": "Cambriolage",
+      "description": "Voler un Hinox pendant qu'il dort",
+      "category": "misc"
+    },
+    {
+      "id": "misc-039",
+      "title": "Petites courses",
+      "description": "Acheter votre premier objet",
+      "category": "misc"
+    },
+    {
+      "id": "misc-040",
+      "title": "Pilleur",
+      "description": "Ouvrir votre premier coffre",
+      "category": "misc"
+    },
+    {
+      "id": "completion-001",
+      "title": "Cartographe",
+      "description": "Compléter la carte",
+      "category": "completion"
+    },
+    {
+      "id": "completion-002",
+      "title": "Désarmé",
+      "description": "Compléter le défi de l'île Finalis",
+      "category": "completion"
+    },
+    {
+      "id": "completion-003",
+      "title": "Apprenti Photographe",
+      "description": "Prendre votre première photo",
+      "category": "completion"
+    },
+    {
+      "id": "completion-004",
+      "title": "F Otto",
+      "description": "Avoir toutes les photos",
+      "category": "completion"
+    },
+    {
+      "id": "completion-005",
+      "title": "Vroum Vroum",
+      "description": "Obtenir le destrier de légende",
+      "category": "completion"
+    },
+    {
+      "id": "completion-006",
+      "title": "Monture Maléfique",
+      "description": "Dompter le cheval de Ganon",
+      "category": "completion"
+    },
+    {
+      "id": "completion-007",
+      "title": "Monture Royale",
+      "description": "Dompter le cheval de Zelda",
+      "category": "completion"
+    },
+    {
+      "id": "completion-008",
+      "title": "Tête de neuille",
+      "description": "Trouver ton premier Korogu",
+      "category": "completion"
+    },
+    {
+      "id": "completion-009",
+      "title": "Graine à Gogo",
+      "description": "Trouver 50 Korogus",
+      "category": "completion"
+    },
+    {
+      "id": "completion-010",
+      "title": "Apprenti Forestier",
+      "description": "Trouver 100 Korogus",
+      "category": "completion"
+    },
+    {
+      "id": "completion-011",
+      "title": "A mi-chemin",
+      "description": "Trouver 400 Korogus (améliorer sacoche)",
+      "category": "completion"
+    },
+    {
+      "id": "completion-012",
+      "title": "Tunique du Voyageur",
+      "description": "Obtenir toutes les tenues",
+      "category": "completion"
+    },
+    {
+      "id": "completion-013",
+      "title": "Cosplay du Prodige",
+      "description": "Améliorer un set au niveau max",
+      "category": "completion"
+    },
+    {
+      "id": "completion-014",
+      "title": "Armurerie Royale",
+      "description": "Obtenir l'armure royale complète",
+      "category": "completion"
+    },
+    {
+      "id": "completion-015",
+      "title": "Collectionneur de Reliques",
+      "description": "Posséder les armes des quatre prodiges",
+      "category": "completion"
+    },
+    {
+      "id": "completion-016",
+      "title": "Livre de Cuisine",
+      "description": "Apprendre 50 recettes",
+      "category": "completion"
+    },
+    {
+      "id": "completion-017",
+      "title": "Archéologue Amateur",
+      "description": "Obtenir 10 objets antiques",
+      "category": "completion"
+    },
+    {
+      "id": "completion-018",
+      "title": "Réminiscence de Termina",
+      "description": "Trouver les masques inspirés de Majora's Mask",
+      "category": "completion"
+    },
+    {
+      "id": "completion-019",
+      "title": "Premier Sanctuaire",
+      "description": "Finir un sanctuaire",
+      "category": "completion"
+    },
+    {
+      "id": "completion-020",
+      "title": "Grand Prêtre Sheikah",
+      "description": "Finir 60 sanctuaires",
+      "category": "completion"
+    },
+    {
+      "id": "completion-021",
+      "title": "Einstein",
+      "description": "Finir tous les sanctuaires",
+      "category": "completion"
+    },
+    {
+      "id": "completion-022",
+      "title": "Explorateur des Profondeurs",
+      "description": "Compléter les 3 labyrinthes",
+      "category": "completion"
+    },
+    {
+      "id": "completion-023",
+      "title": "Hyrule en Paix",
+      "description": "Visiter tous les relais",
+      "category": "completion"
+    },
+    {
+      "id": "completion-024",
+      "title": "Éclaireur Royal",
+      "description": "Découvrir toutes les villes et villages",
+      "category": "completion"
+    },
+    {
+      "id": "completion-025",
+      "title": "Petite Fortune",
+      "description": "Posséder 1000 rubis",
+      "category": "completion"
+    },
+    {
+      "id": "completion-026",
+      "title": "Portefeuille conséquent",
+      "description": "Posséder 10000 rubis",
+      "category": "completion"
+    },
+    {
+      "id": "completion-027",
+      "title": "Crésus",
+      "description": "Posséder 50000 rubis",
+      "category": "completion"
+    },
+    {
+      "id": "completion-028",
+      "title": "Artiste Culinaire",
+      "description": "Cuisiner 10 plats parfaits",
+      "category": "completion"
+    },
+    {
+      "id": "completion-029",
+      "title": "Zaaaaap",
+      "description": "Récupérer le masque du tonnerre",
+      "category": "completion"
+    },
+    {
+      "id": "challenge-001",
+      "title": "Survivant Nu",
+      "description": "Battre un Lynel sans armure",
+      "category": "challenge"
+    },
+    {
+      "id": "challenge-002",
+      "title": "Maître des Parades",
+      "description": "Parer 5 lasers de Gardien à la suite",
+      "category": "challenge"
+    },
+    {
+      "id": "challenge-003",
+      "title": "Montagnard",
+      "description": "Atteindre le sommet du Mont Lanayru",
+      "category": "challenge"
+    },
+    {
+      "id": "challenge-004",
+      "title": "Yeux de Faucon",
+      "description": "Abattre un ennemi de très loin",
+      "category": "challenge"
+    },
+    {
+      "id": "challenge-005",
+      "title": "Speedrunner",
+      "description": "Faire un Wind Bomb",
+      "category": "challenge"
     }
   ]
 }
