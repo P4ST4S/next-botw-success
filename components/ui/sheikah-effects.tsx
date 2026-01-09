@@ -56,7 +56,7 @@ export function CircuitPattern() {
             y1="10"
             x2="20"
             y2="10"
-            stroke="currentColor"
+            stroke="#f6df60"
             strokeWidth="0.5"
           />
           {/* Vertical lines */}
@@ -65,18 +65,17 @@ export function CircuitPattern() {
             y1="0"
             x2="10"
             y2="20"
-            stroke="currentColor"
+            stroke="#f6df60"
             strokeWidth="0.5"
           />
           {/* Connection points */}
-          <circle cx="10" cy="10" r="1" fill="currentColor" />
+          <circle cx="10" cy="10" r="1" fill="#f6df60" />
         </pattern>
       </defs>
       <rect
         width="100"
         height="100"
         fill="url(#circuit-pattern)"
-        className="text-sheikah-blue"
       />
     </svg>
   );
@@ -93,7 +92,7 @@ export function SheikahCorners() {
     <>
       {/* Top-left */}
       <div className="absolute top-0 left-0 w-4 h-4">
-        <svg width={cornerSize} height={cornerSize} className="text-sheikah-blue/60">
+        <svg width={cornerSize} height={cornerSize} className="text-sheikah-gold">
           <line
             x1="0"
             y1={strokeWidth / 2}
@@ -115,7 +114,7 @@ export function SheikahCorners() {
 
       {/* Top-right */}
       <div className="absolute top-0 right-0 w-4 h-4">
-        <svg width={cornerSize} height={cornerSize} className="text-sheikah-blue/60">
+        <svg width={cornerSize} height={cornerSize} className="text-sheikah-gold">
           <line
             x1="0"
             y1={strokeWidth / 2}
@@ -137,7 +136,7 @@ export function SheikahCorners() {
 
       {/* Bottom-left */}
       <div className="absolute bottom-0 left-0 w-4 h-4">
-        <svg width={cornerSize} height={cornerSize} className="text-sheikah-blue/60">
+        <svg width={cornerSize} height={cornerSize} className="text-sheikah-gold">
           <line
             x1="0"
             y1={cornerSize - strokeWidth / 2}
@@ -159,7 +158,7 @@ export function SheikahCorners() {
 
       {/* Bottom-right */}
       <div className="absolute bottom-0 right-0 w-4 h-4">
-        <svg width={cornerSize} height={cornerSize} className="text-sheikah-blue/60">
+        <svg width={cornerSize} height={cornerSize} className="text-sheikah-gold">
           <line
             x1="0"
             y1={cornerSize - strokeWidth / 2}

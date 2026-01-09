@@ -10,7 +10,7 @@ interface Props {
 
 export function DashboardHeader({ isAdmin, userEmail }: Props) {
   return (
-    <header className="bg-sheikah-card border-b border-sheikah-blue/30">
+    <header className="bg-sheikah-card border-b border-sheikah-gold/50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <h2 className="text-xl font-bold text-sheikah-blue">

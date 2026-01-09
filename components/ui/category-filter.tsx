@@ -19,7 +19,7 @@ export function CategoryFilter({ categories, selected, onSelect }: Props) {
         className={`px-6 py-2 rounded-full font-bold transition-all ${
           selected === null
             ? "bg-sheikah-blue text-sheikah-dark shadow-glow"
-            : "bg-sheikah-card text-sheikah-blue border border-sheikah-blue/50"
+            : "bg-sheikah-card text-sheikah-blue border border-sheikah-gold/50"
         }`}
       >
         All
@@ -34,7 +34,7 @@ export function CategoryFilter({ categories, selected, onSelect }: Props) {
           className={`px-6 py-2 rounded-full font-bold transition-all ${
             selected === category.id
               ? "text-sheikah-dark shadow-glow"
-              : "bg-sheikah-card text-sheikah-blue border border-sheikah-blue/50"
+              : "bg-sheikah-card text-sheikah-blue border border-sheikah-gold/50"
           }`}
           style={{
             backgroundColor:

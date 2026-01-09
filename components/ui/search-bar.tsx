@@ -17,7 +17,7 @@ export function SearchBar({ value, onChange, placeholder = "Rechercher un succè
       <motion.div
         animate={{
           boxShadow: isFocused
-            ? "0 0 30px rgba(0, 253, 255, 0.4)"
+            ? "0 0 30px rgba(196, 164, 86, 0.4)"
             : "0 0 10px rgba(0, 253, 255, 0.2)",
         }}
         className="relative"
@@ -29,7 +29,7 @@ export function SearchBar({ value, onChange, placeholder = "Rechercher un succè
           {/* Search icon */}
           <div className="absolute left-5 pointer-events-none">
             <svg
-              className="w-5 h-5 text-sheikah-blue"
+              className={`w-5 h-5 transition-colors ${isFocused ? "text-sheikah-gold" : "text-sheikah-blue"}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -51,7 +51,9 @@ export function SearchBar({ value, onChange, placeholder = "Rechercher un succè
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             placeholder={placeholder}
-            className="w-full pl-14 pr-12 py-4 bg-sheikah-card border-2 border-sheikah-blue/50 rounded-full text-sheikah-blue placeholder:text-sheikah-blue/40 focus:outline-none focus:border-sheikah-blue transition-all duration-300"
+            className={`w-full pl-14 pr-12 py-4 bg-sheikah-card border-2 rounded-full text-sheikah-blue placeholder:text-sheikah-blue/40 focus:outline-none transition-all duration-300 ${
+              isFocused ? "border-sheikah-gold" : "border-sheikah-blue/50"
+            }`}
           />
 
           {/* Clear button */}
@@ -61,7 +63,7 @@ export function SearchBar({ value, onChange, placeholder = "Rechercher un succè
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               onClick={() => onChange("")}
-              className="absolute right-5 text-sheikah-blue/60 hover:text-sheikah-blue transition-colors"
+              className="absolute right-5 text-sheikah-gold hover:text-sheikah-gold transition-colors"
             >
               <svg
                 className="w-5 h-5"
@@ -82,8 +84,8 @@ export function SearchBar({ value, onChange, placeholder = "Rechercher un succè
       </motion.div>
 
       {/* Decorative Sheikah pattern */}
-      <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-sheikah-blue/30" />
-      <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-sheikah-blue/30" />
+      <div className="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-sheikah-gold/50" />
+      <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-sheikah-gold/50" />
     </div>
   );
 }
