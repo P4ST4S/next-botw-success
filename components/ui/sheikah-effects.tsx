@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 /**
  * Scanning line effect - typical of Sheikah technology
@@ -56,7 +57,7 @@ export function CircuitPattern() {
             y1="10"
             x2="20"
             y2="10"
-            stroke="#f6df60"
+            stroke="#C4A456"
             strokeWidth="0.5"
           />
           {/* Vertical lines */}
@@ -65,11 +66,11 @@ export function CircuitPattern() {
             y1="0"
             x2="10"
             y2="20"
-            stroke="#f6df60"
+            stroke="#C4A456"
             strokeWidth="0.5"
           />
           {/* Connection points */}
-          <circle cx="10" cy="10" r="1" fill="#f6df60" />
+          <circle cx="10" cy="10" r="1" fill="#C4A456" />
         </pattern>
       </defs>
       <rect
@@ -177,6 +178,145 @@ export function SheikahCorners() {
           />
         </svg>
       </div>
+    </>
+  );
+}
+
+/**
+ * Rectangular mask for BotW-style reveal animation from center
+ */
+export function HexagonalMask({ children }: { children: ReactNode }) {
+  return (
+    <motion.div
+      initial={{
+        clipPath: "inset(45% 45% 45% 45% round 8px)",
+        opacity: 0,
+      }}
+      animate={{
+        clipPath: "inset(0% 0% 0% 0% round 8px)",
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.5,
+        ease: [0.25, 0.1, 0.25, 1],
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+/**
+ * Hologram glitch effect with chromatic aberration
+ */
+export function HologramGlitch({ children, active = false }: { children: ReactNode; active?: boolean }) {
+  if (!active) return <>{children}</>;
+
+  return (
+    <div className="relative">
+      {/* Red channel offset */}
+      <div className="absolute inset-0 text-red-500 opacity-50 hologram-glitch-layer" style={{ transform: "translate(-2px, 0)" }}>
+        {children}
+      </div>
+      
+      {/* Green channel offset */}
+      <div className="absolute inset-0 text-green-500 opacity-50 hologram-glitch-layer" style={{ transform: "translate(0, -1px)" }}>
+        {children}
+      </div>
+      
+      {/* Blue channel offset */}
+      <div className="absolute inset-0 text-blue-500 opacity-50 hologram-glitch-layer" style={{ transform: "translate(2px, 1px)" }}>
+        {children}
+      </div>
+      
+      {/* Original */}
+      <div className="relative z-10">{children}</div>
+    </div>
+  );
+}
+
+/**
+ * Data stream effect - scrolling Sheikah symbols
+ */
+export function DataStream() {
+  const symbols = "⬡◇△▽◯⬢⬣⬠⬡◇△▽";
+  
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-5">
+      <motion.div
+        animate={{
+          y: ["0%", "-100%"],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear" as const,
+        }}
+        className="flex flex-col gap-4 text-sheikah-blue font-mono text-xs"
+      >
+        {Array.from({ length: 30 }).map((_, i) => (
+          <div key={i} className="whitespace-nowrap">
+            {symbols.repeat(20)}
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+/**
+ * Selection triangles - BotW inventory style
+ */
+export function SelectionTriangles() {
+  return (
+    <>
+      {/* Top-left triangle */}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="absolute top-2 left-2"
+      >
+        <svg width="16" height="16" className="text-sheikah-blue">
+          <polygon points="0,0 16,0 0,16" fill="currentColor" />
+        </svg>
+      </motion.div>
+
+      {/* Top-right triangle */}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.05, ease: "easeOut" }}
+        className="absolute top-2 right-2"
+      >
+        <svg width="16" height="16" className="text-sheikah-blue">
+          <polygon points="0,0 16,0 16,16" fill="currentColor" />
+        </svg>
+      </motion.div>
+
+      {/* Bottom-left triangle */}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.1, ease: "easeOut" }}
+        className="absolute bottom-2 left-2"
+      >
+        <svg width="16" height="16" className="text-sheikah-blue">
+          <polygon points="0,0 0,16 16,16" fill="currentColor" />
+        </svg>
+      </motion.div>
+
+      {/* Bottom-right triangle */}
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.15, ease: "easeOut" }}
+        className="absolute bottom-2 right-2"
+      >
+        <svg width="16" height="16" className="text-sheikah-blue">
+          <polygon points="16,0 16,16 0,16" fill="currentColor" />
+        </svg>
+      </motion.div>
     </>
   );
 }
