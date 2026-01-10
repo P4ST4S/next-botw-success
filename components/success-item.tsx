@@ -91,13 +91,28 @@ export function SuccessItem({ success, isAdmin }: Props) {
               </p>
 
               {success.completedAt && (
-                <motion.p
+                <motion.div
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-sheikah-gold text-xs mt-2 font-semibold"
+                  className="flex items-center gap-1.5 text-sheikah-gold text-xs mt-2 font-semibold"
                 >
-                  ✓ Completé le {new Date(success.completedAt).toLocaleDateString("fr-FR")}
-                </motion.p>
+                  <svg
+                    className="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={3}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>
+                    Completé le {new Date(success.completedAt).toLocaleDateString("fr-FR")}
+                  </span>
+                </motion.div>
               )}
             </motion.div>
           </div>
